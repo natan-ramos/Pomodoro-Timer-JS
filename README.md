@@ -9,8 +9,7 @@ Este é um aplicativo web Pomodoro minimalista, construído com HTML, CSS e Java
 ## 🚀 Visualizar o Projeto Funcionando (Deploy)
  
 Clique no link abaixo para testar o Timer e a Lista de Tarefas diretamente no seu navegador!
-
-[**TESTAR O TIMER POMODORO AQUI**](SEU_LINK_DO_GITHUB_PAGES_AQUI) 
+https://natan-ramos.github.io/Pomodoro-Timer-JS/
 
 ---
 
