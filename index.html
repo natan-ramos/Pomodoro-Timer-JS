@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Pomodoro - Meu Projeto JS</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="pomodoro-app">
+        
+        <h2 id="phase-label">Tempo de Trabalho</h2>
+
+        <div id="timer-display">25:00</div>
+
+        <div class="controls">
+            <button id="start-btn">Iniciar</button>
+            <button id="pause-btn">Pausar</button>
+            <button id="reset-btn">Resetar</button>
+            <button id="short-break-btn">Descanso Curto (5min)</button> 
+            <button id="long-break-btn">Descanso Longo (15min)</button>
+        </div>
+    </div>
+
+     <div class="task-list-app">
+        <h2>Lista de Tarefas</h2>
+        
+        <div class="add-task">
+            <input type="text" id="new-task-input" placeholder="O que você precisa fazer agora?">
+            <button id="add-task-btn">Adicionar</button>
+        </div>
+
+        <ul id="tasks-container">
+            </ul>
+        
+        <p id="current-task-indicator">Tarefa Atual: Nenhuma</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

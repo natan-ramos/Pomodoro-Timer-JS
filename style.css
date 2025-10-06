@@ -1,0 +1,147 @@
+/* 1. ESTILO GERAL E FONTES */
+body {
+    background-color: #a5ccd1;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center; /* Ou use 'space-around' se preferir mais espaço nas laterais */
+    align-items: flex-start; /* <<< NOVO: Alinha os itens pelo topo */
+    padding-top: 50px; /* <<< NOVO: Sobe o conteúdo um pouco na página */
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* 2. CONTAINER PRINCIPAL */
+.pomodoro-app {
+    background-color: #e0f7fa;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+/* 3. ESTILO DO DISPLAY DO TEMPO */
+#timer-display {
+    font-size: 5em; /* Fonte bem grande para o tempo */
+    font-weight: bold;
+    color: #545050;
+    margin: 20px 0;
+}
+
+/* 4. ESTILO DA ETIQUETA (LABEL) */
+#phase-label {
+    color: #007bff; /* Uma cor de destaque para o indicador */
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* 5. ESTILO DOS BOTÕES DE CONTROLE */
+.controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer; /* Indica que é clicável */
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease-out, box-shadow 0.2s ease-out; /* Adicionado transform e box-shadow */
+}
+
+.controls button:hover {
+    background-color: #0056b3; /* Mantém a mudança de cor */
+    transform: translateY(-3px); /* Faz o botão "saltar" 3px para cima */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais suave e levemente deslocada */
+}
+
+/* ESTILOS PARA A LISTA DE TAREFAS */
+.task-list-app {
+    background-color: #e0f7fa;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-left: 30px;
+}
+
+.task-list-app h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-task {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#new-task-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+#add-task-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+     transition: background-color 0.3s ease, transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+#tasks-container {
+    list-style: none;
+    padding: 0;
+}
+
+#tasks-container li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-left: 5px solid #007bff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-buttons button {
+    background: none;
+    border: none;
+    color: #ff0000; /* Cor vermelha para o delete */
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+#current-task-indicator {
+    font-style: italic;
+    color: #333;
+    margin-top: 15px;
+    text-align: center;
+    padding: 8px;
+    background-color: #ffe0b2; /* Fundo leve para o indicador */
+    border-radius: 4px;
+}
+/* Efeito de hover (salto e sombra) no botão de Adicionar Tarefa */
+#add-task-btn:hover {
+    background-color: #0056b3; /* Mantém a mudança de cor */
+    transform: translateY(-3px); /* Faz o botão "saltar" 3px para cima */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra suave e esfumaçada */
+}
